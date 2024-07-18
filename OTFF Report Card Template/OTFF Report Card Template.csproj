@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <RootNamespace>OTFF_Report_Card_Template</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="fQ62SAb2j.png" />
+    <None Remove="logo-mini.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="fQ62SAb2j.png" />
+    <Resource Include="logo-mini.png" />
+  </ItemGroup>
+
+</Project>
