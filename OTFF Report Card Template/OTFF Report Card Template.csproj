@@ -9,11 +9,13 @@
 
   <ItemGroup>
     <None Remove="fQ62SAb2j.png" />
+    <None Remove="KB_E6759 - Copy.JPG" />
     <None Remove="logo-mini.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="fQ62SAb2j.png" />
+    <Resource Include="KB_E6759 - Copy.JPG" />
     <Resource Include="logo-mini.png" />
   </ItemGroup>
 
