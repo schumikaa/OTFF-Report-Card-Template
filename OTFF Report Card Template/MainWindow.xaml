@@ -7,144 +7,125 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="1123" Width="794">
     <Grid>
-        <Border BorderThickness="2,2,2,2" BorderBrush="#FF263547" Margin="30,30,30,30">
-            <Grid>
+        <Border BorderThickness="2,2,2,2" BorderBrush="#FF263547" Margin="30,30,30,30" Padding="5,5,5,5">
+            <Grid Background="#7FFFD6D6">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="35"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="78"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="75"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition Height="25"/>
+                </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition Width="150"/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="100"/>
-                    <RowDefinition Height="74"/>
-                    <RowDefinition Height="40"/>
-                    <RowDefinition/>
-                    <RowDefinition Height="150"/>
-                    <RowDefinition Height="25"/>
-                    <RowDefinition Height="50"/>
-                </Grid.RowDefinitions>
-                <Rectangle Grid.ColumnSpan="2" Fill="#FF263547"/>
-                <Border BorderThickness="2,2,2,2" BorderBrush="#FF263547" Margin="12,12,12,5" CornerRadius="5,5,5,5" Grid.RowSpan="2" Background="White">
-                    <Image x:Name="SystemBadge" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,10,10,10" Source="/logo-mini.png" Stretch="Uniform"/>
-                </Border>
-                <Border BorderThickness="2,2,2,2" BorderBrush="#FF263547" Grid.Column="1" Margin="0,12,12,5" CornerRadius="5,5,5,5" Grid.RowSpan="2" Background="White">
-                    <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition/>
-                            <RowDefinition Height="25"/>
-                            <RowDefinition Height="30"/>
-                            <RowDefinition Height="10"/>
-                            <RowDefinition Height="35"/>
-                        </Grid.RowDefinitions>
-                        <Label x:Name="SystemMotto" Content="Kyowola otudde, okibanja ofukamidde" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch" Padding="5,5,5,5" FontFamily="Arial" FontSize="14" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold"/>
-                        <Label x:Name="AssessmentSession" Content="Sample Assessment Session Term II, 2024" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch" Padding="5,5,5,5" FontFamily="Arial" FontSize="14" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold"/>
-                        <TextBlock x:Name="SystemName" HorizontalAlignment="Center" Text="SAMPLE JUNIOR DAY AND BOARDING PRIMARY SCHOOL" TextWrapping="Wrap" VerticalAlignment="Center" Padding="5,0,5,0" FontFamily="Arial" FontSize="17" FontWeight="Bold"/>
-                        <TextBlock x:Name="SystemContacts" HorizontalAlignment="Center" Grid.Row="1" Text="Email: schumikaa.devs@gmail.com | Tel: +256 789 186 327, +256 753 615 560" TextWrapping="Wrap" VerticalAlignment="Center" Padding="5,0,5,0" FontFamily="Arial"/>
-                        <Rectangle HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch" Margin="5,3,5,3" Fill="#FF263547"/>
-                    </Grid>
-                </Border>
-                <Label Content="This report card was automatically generated with Elemental" Grid.Row="5" Background="#FF263547" Foreground="White" Grid.ColumnSpan="2" FontFamily="Arial" FontSize="14" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="5,0,5,0" Margin="0,25,0,0" Grid.RowSpan="2"/>
-                <Label x:Name="AppIDandSessionCode" Content="App ID: Session Code" Grid.Row="5
-                       " HorizontalContentAlignment="Right" Padding="5,0,10,0" FontFamily="Arial" VerticalContentAlignment="Center" Background="#FFDDDDDD" Grid.ColumnSpan="2"/>
-                <Label x:Name="ReportCardTitle" Content="LEARNER ASSESSMENT REPORT" Grid.Row="2" Grid.ColumnSpan="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="5,0,5,0" FontFamily="Arial" FontSize="14" FontWeight="Bold" Margin="12,5,12,0" Background="#FF263547" Foreground="White"/>
-                <Border BorderThickness="0,0,0,2" Grid.Row="3" Grid.ColumnSpan="2" Margin="12,5,12,5" BorderBrush="#FF263547">
-                    <Grid Margin="0,0,0,5">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="40"/>
-                            <RowDefinition/>
-                            <RowDefinition Height="90"/>
-                        </Grid.RowDefinitions>
-                        <Border BorderThickness="1" Padding="3,3,3,3">
-                            <Grid>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="2*"/>
-                                    <ColumnDefinition Width="*"/>
-                                </Grid.ColumnDefinitions>
-                                <Label x:Name="LearnerName" Content="NAME: SSENGABI JOACHIM BASAJJAMISEGE" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Padding="5,0,5,0" FontFamily="Arial" FontSize="16" FontWeight="Bold" Margin="0,0,15,0"/>
-                                <Label x:Name="LearnerClass" Content="CLASS: P.2 NORTH" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Padding="5,0,5,0" FontFamily="Arial" FontSize="16" FontWeight="Bold"/>
-                            </Grid>
-                        </Border>
-                        <Grid x:Name="AssessmentSummaryTable" Grid.Row="2">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto"/>
-                                <ColumnDefinition Width="Auto"/>
-                                <ColumnDefinition/>
-                                <ColumnDefinition Width="Auto"/>
-                                <ColumnDefinition Width="Auto"/>
-                                <ColumnDefinition Width="100"/>
-                            </Grid.ColumnDefinitions>
-                            <Grid.RowDefinitions>
-                                <RowDefinition/>
-                                <RowDefinition/>
-                                <RowDefinition/>
-                            </Grid.RowDefinitions>
-                            <Label x:Name="Position" Content="Position" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.ColumnSpan="2" VerticalContentAlignment="Center" Padding="5,0,10,0" Margin="0,2,2,2" FontFamily="Arial" FontSize="14" FontWeight="Bold" Background="#FFDEDCDC" BorderThickness="1,1,1,1" BorderBrush="#FFDDDDDD"/>
-                            <Label x:Name="AssessmentCommentsTitle" Content="Assessment Comments" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Padding="5,0,10,0" Margin="5,2,5,2" FontFamily="Arial" FontSize="14" FontWeight="Bold" Background="#FFDEDCDC" BorderThickness="1,1,1,1" BorderBrush="#FFDDDDDD"/>
-                            <Label x:Name="LearnerParticularsTitle" Content="Learner Particulars" Grid.Column="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.ColumnSpan="2" VerticalContentAlignment="Center" Padding="5,0,10,0" Margin="0,2,0,2" FontFamily="Arial" FontSize="14" FontWeight="Bold" Background="#FFDEDCDC" BorderThickness="1,1,1,1" BorderBrush="#FFDDDDDD"/>
-                            <Label x:Name="TotalLabel" Content="Total" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Padding="5,0,10,0" Margin="0,0,2,2" FontFamily="Arial" FontSize="14" Background="#99DDDDDD"/>
-                            <Label x:Name="AverageLabel" Content="Average" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Padding="5,0,10,0" Margin="0,0,2,2" FontFamily="Arial" FontSize="14" Background="#99DDDDDD"/>
-                            <Label x:Name="TotalValue" Content="500" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Padding="5,0,10,0" Margin="0,0,2,2" FontFamily="Arial" FontSize="14" Background="#FFDEDCDC" BorderBrush="#FFDEDCDC"/>
-                            <Label x:Name="AverageValue" Content="500" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Padding="5,0,10,0" Margin="0,0,2,2" FontFamily="Arial" FontSize="14" Background="#FFDEDCDC" BorderBrush="#FFDEDCDC"/>
-                            <Label x:Name="PaymentCodeLabel" Content="Payment Code" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Padding="5,0,10,0" Margin="0,0,2,2" FontFamily="Arial" FontSize="14" Background="#99DDDDDD"/>
-                            <Label x:Name="LearnerIDLabel" Content="Learner ID No." Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Padding="5,0,10,0" Margin="0,0,2,2" FontFamily="Arial" FontSize="14" Background="#99DDDDDD"/>
-                            <Label x:Name="PaymentCodeValue" Content="..." Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Padding="5,0,10,0" Margin="0,0,0,2" FontFamily="Arial" FontSize="14" Background="#FFDEDCDC" BorderBrush="#FFDEDCDC"/>
-                            <Label x:Name="LearnerIDNoValue" Content="..." Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Padding="5,0,10,0" Margin="0,0,0,2" FontFamily="Arial" FontSize="14" Background="#FFDEDCDC" BorderBrush="#FFDEDCDC"/>
-                            <Border x:Name="AssessmentCommentsBody" BorderThickness="1" Grid.Column="2" Grid.Row="1" Grid.RowSpan="2" Margin="5,0,5,2" BorderBrush="#FFDEDCDC"/>
-                            <Border BorderThickness="2,0,0,0" BorderBrush="Black" Grid.Column="5" Grid.RowSpan="3" Margin="5,2,0,1" Padding="5,0,0,0">
-                                <Image x:Name="LearnerPhoto" Source="/KB_E6759 - Copy.JPG" Stretch="UniformToFill" StretchDirection="Both"/>
-                            </Border>
-                        </Grid>
-                        <Grid x:Name="AssessmentDataTable" Grid.Row="1" Margin="0,5,0,5">
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="30"/>
-                                <RowDefinition Height="30"/>
-                                <RowDefinition Height="30"/>
-                            </Grid.RowDefinitions>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto"/>
-                                <ColumnDefinition Width="Auto"/>
-                                <ColumnDefinition/>
-                                <ColumnDefinition Width="Auto"/>
-                            </Grid.ColumnDefinitions>
-                            <Label Content="SUBJECT" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Padding="5,0,10,0" FontFamily="Arial" FontSize="14" FontWeight="Bold" Background="#FF263547" Foreground="White" Margin="0,0,1,1"/>
-                            <Label Content="MARKS" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Padding="5,0,10,0" FontFamily="Arial" FontSize="14" FontWeight="Bold" Background="#FF263547" Foreground="White" Margin="0,0,1,1"/>
-                            <Label Content="COMMENT" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Padding="5,0,10,0" FontFamily="Arial" FontSize="14" FontWeight="Bold" Background="#FF263547" Foreground="White" Margin="0,0,1,1"/>
-                            <Label Content="TEACHER" Grid.Column="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Padding="5,0,10,0" FontFamily="Arial" FontSize="14" FontWeight="Bold" Background="#FF263547" Foreground="White" Margin="0,0,0,1"/>
-                        </Grid>
-                    </Grid>
-                </Border>
-                <Border BorderThickness="2,2,2,2" Grid.Row="4" Margin="5,0,5,5" Grid.ColumnSpan="2" CornerRadius="0,0,5,5" Padding="5,5,5,5">
+                <Image x:Name="SystemBadge" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="/logo-mini.png" Margin="5,5,5,5" Stretch="UniformToFill"/>
+                <Grid Grid.Column="1" Margin="5,5,5,5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock x:Name="SystemName" HorizontalAlignment="Stretch" Text="System Name" TextWrapping="Wrap" VerticalAlignment="Stretch" Padding="5,0,5,0" FontFamily="Arial" FontSize="22" FontWeight="Bold"/>
+                    <Label x:Name="SystemMotto" Content="System Motto" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" Padding="5,0,5,0" TextBlock.FontFamily="Arial" TextBlock.FontSize="14" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="16"/>
+                    <Label x:Name="SystemContacts" Content="System Contacts" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="5,0,5,0" FontFamily="Arial" FontSize="16"/>
+                    <Label Content="LEARNER ACADEMIC ASSESSMENT REPORT" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch" FontFamily="Arial" FontSize="14" Foreground="#FFDDDDDD" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="5,0,5,0" FontWeight="Bold" Background="#FF263B47"/>
+                </Grid>
+                <Border BorderThickness="1" BorderBrush="#7F263B47" Grid.Row="1" Grid.ColumnSpan="2" Padding="5,5,5,5" Margin="5,0,5,0" CornerRadius="5,5,5,5">
                     <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition/>
-                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
                         </Grid.ColumnDefinitions>
-                        <Border BorderThickness="2,2,2,2" Grid.Column="1" BorderBrush="#FF263547" Margin="5,0,0,0">
-                            <Grid>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition/>
-                                    <RowDefinition Height="25"/>
-                                </Grid.RowDefinitions>
-                                <Label x:Name="CardSerialNo" Content="Record Code" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" Background="#FF263547" Foreground="White" FontFamily="Arial" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="5,0,5,0" BorderThickness="1,1,1,1" BorderBrush="#FF263547"/>
-                                <Image x:Name="QRCodeImage" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="/fQ62SAb2j.png"/>
-                            </Grid>
-                        </Border>
-                        <Grid>
+                        <Label x:Name="LearnerName" Content="NAME" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Padding="5,0,5,0" VerticalContentAlignment="Center" FontFamily="Arial" FontSize="14" FontWeight="Bold" Margin="5,0,5,0"/>
+                        <Label x:Name="LearnerClass" Content="CLASS" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Padding="5,0,5,0" VerticalContentAlignment="Center" FontFamily="Arial" FontSize="14" FontWeight="Bold" Margin="5,0,5,0"/>
+                        <Label Content="LIN" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Padding="5,0,5,0" VerticalContentAlignment="Center" FontFamily="Arial" FontSize="14" FontWeight="Bold" Margin="5,0,0,0"/>
+                        <Label x:Name="LearnerIDNoValue" Content="LIN VALUE" Grid.Column="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Padding="5,0,5,0" VerticalContentAlignment="Center" FontFamily="Arial" FontSize="14" FontWeight="Bold" Margin="5,0,0,0"/>
+                    </Grid>
+                </Border>
+                <Border BorderThickness="1" BorderBrush="#7F263B47" Grid.Row="2" Margin="5,5,0,5" CornerRadius="5,5,5,5">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="150"/>
+                            <RowDefinition/>
+                            <RowDefinition Height="165"/>
+                        </Grid.RowDefinitions>
+                        <Image x:Name="LearnerPhoto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5,5,5,5" Source="/KB_E6759 - Copy.JPG" Stretch="UniformToFill"/>
+                        <Grid Grid.Row="2" Background="#FF263B47" Margin="5,5,5,5">
                             <Grid.RowDefinitions>
+                                <RowDefinition/>
                                 <RowDefinition Height="25"/>
-                                <RowDefinition Height="*"/>
-                                <RowDefinition Height="25"/>
-                                <RowDefinition Height="*"/>
-                                <RowDefinition Height="30"/>
                             </Grid.RowDefinitions>
-                            <Label x:Name="ClassTeacherCommentsTitle" Content="Class Teacher's Comment" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontWeight="Bold" FontFamily="Arial" FontSize="14" Padding="5,0,5,0" VerticalContentAlignment="Center"/>
-                            <Label x:Name="HeadteacherCommentsTitle" Content="Headteacher's Comment" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch" FontWeight="Bold" FontFamily="Arial" FontSize="14" Padding="5,0,5,0" VerticalContentAlignment="Center"/>
-                            <Label x:Name="NextTermBegins" Content="Next term begins on: " HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch" FontWeight="Bold" FontFamily="Arial" FontSize="14" Padding="5,0,5,0" VerticalContentAlignment="Center"/>
-                            <Label x:Name="ClassTeacherComments" Content="..." HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" FontFamily="Arial" FontSize="14" Padding="5,0,5,0" VerticalContentAlignment="Center" BorderBrush="#FF263547" BorderThickness="0,0,0,1"/>
-                            <Label x:Name="HeadteacherComments" Content="..." HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch" FontFamily="Arial" FontSize="14" Padding="5,0,5,0" VerticalContentAlignment="Center" BorderBrush="#FF263547" BorderThickness="0,0,0,1"/>
+                            <Image x:Name="QRCodeImage" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5,5,5,5" Source="/fQ62SAb2j.png" Stretch="Uniform"/>
+                            <Label x:Name="CardSerialNo" Content="Label" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" Foreground="#FFDDDDDD" Background="{x:Null}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="3,0,3,0" FontFamily="Arial"/>
                         </Grid>
                     </Grid>
                 </Border>
+                <Border BorderThickness="1" BorderBrush="#7F263B47" Grid.Column="1" Grid.Row="2" CornerRadius="5,5,5,5" Margin="5,5,5,5" Background="#FFDDDDDD" Padding="5,5,5,5">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="35"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Label x:Name="AssessmentSession" Content="Assessment Session" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="5,0,5,0" FontFamily="Arial" FontSize="14" FontWeight="Bold"/>
+                        <Border x:Name="AssessmentDataTable" BorderThickness="1" Grid.Row="1" CornerRadius="5,5,0,0" Padding="5,5,5,5" Background="White"/>
+                    </Grid>
+                </Border>
+                <Border BorderThickness="1" BorderBrush="#7F263B47" Grid.Column="1" Grid.Row="3" Margin="5,0,5,5" CornerRadius="5,5,5,5" Padding="5,5,5,5">
+                    <Grid Background="#7F263B47">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="30"/>
+                        </Grid.RowDefinitions>
+                        <Label Content="Total" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Padding="10,0,10,0" FontFamily="Arial" FontSize="14" Background="#FFDDDDDD" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="2,2,2,2" FontWeight="Bold"/>
+                        <Label Content="Average" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Padding="10,0,10,0" FontFamily="Arial" FontSize="14" Background="#FFDDDDDD" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="0,2,2,2" FontWeight="Bold"/>
+                        <Label Content="Position" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Padding="10,0,10,0" FontFamily="Arial" FontSize="14" Background="#FFDDDDDD" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="0,2,2,2" FontWeight="Bold"/>
+                        <Label Content="Fees Payment Code" Grid.Column="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Padding="10,0,10,0" FontFamily="Arial" FontSize="14" Background="#FFDDDDDD" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="0,2,2,2" FontWeight="Bold"/>
+                        <Label x:Name="TotalValue" Content="Total Value" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" Padding="10,0,10,0" FontFamily="Arial" FontSize="14" Background="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="2,0,2,2"/>
+                        <Label x:Name="AverageValue" Content="Average Value" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" Padding="10,0,10,0" FontFamily="Arial" FontSize="14" Background="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="0,0,2,2"/>
+                        <Label x:Name="Position" Content="Position" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" Padding="10,0,10,0" FontFamily="Arial" FontSize="14" Background="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="0,0,2,2"/>
+                        <Label x:Name="PaymentCodeValue" Content="Payment Code Value" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" Padding="10,0,10,0" FontFamily="Arial" FontSize="14" Background="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="0,0,2,2"/>
+                    </Grid>
+                </Border>
+                <Border x:Name="AssessmentCommentsBody" BorderThickness="0,0,0,1" BorderBrush="#7F263B47" Grid.Row="4" Grid.ColumnSpan="2" Margin="5,0,5,5" Padding="0,5,0,5"/>
+                <Grid Grid.Row="5" Grid.ColumnSpan="2" Margin="5,0,5,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                    </Grid.RowDefinitions>
+                    <Label x:Name="Comment3" Content="" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Padding="5,0,5,0" FontFamily="Arial" FontSize="14" Grid.ColumnSpan="2"/>
+                    <Label Content="Class Teacher's Comment:" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Padding="0,0,5,0" FontFamily="Arial" FontSize="14" FontWeight="Bold" BorderBrush="#7F263B47" BorderThickness="0,0,0,1"/>
+                    <Label Content="Headteacher's Comment:" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Padding="0,0,5,0" FontFamily="Arial" FontSize="14" FontWeight="Bold" BorderBrush="#7F263B47" BorderThickness="0,0,0,1"/>
+                    <Label x:Name="ClassTeacherComments" Content="" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Padding="5,0,0,0" FontFamily="Arial" FontSize="14" BorderBrush="#7F263B47" BorderThickness="0,0,0,1"/>
+                    <Label x:Name="HeadteacherComments" Content="" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Padding="5,0,0,0" FontFamily="Arial" FontSize="14" BorderBrush="#7F263B47" BorderThickness="0,0,0,1"/>
+                </Grid>
+                <Label x:Name="NextTermBegins" Content="Next Term Begins" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="5,0,5,0" Grid.ColumnSpan="2" FontFamily="Arial" FontSize="20" FontWeight="Bold"/>
+                <Label x:Name="AppIDandSessionCode" Content="AppID and SessionCode" HorizontalAlignment="Stretch" Grid.Row="10" VerticalAlignment="Stretch" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Padding="5,0,5,0" Grid.ColumnSpan="2" FontFamily="Arial" FontWeight="Normal" Background="#FFDDDDDD" Margin="5,0,5,0"/>
+                <Border x:Name="continASessionKey" BorderThickness="1" Grid.Row="8" Grid.ColumnSpan="2" Margin="5,0,5,5"/>
+                <Border x:Name="GradingScale" BorderThickness="1" Grid.Row="9" Grid.ColumnSpan="2" Margin="5,0,5,5"/>
             </Grid>
+
         </Border>
 
     </Grid>
